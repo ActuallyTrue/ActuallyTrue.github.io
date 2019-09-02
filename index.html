@@ -19,6 +19,7 @@
         .test:nth-child(even) {background: #2c2f33}
         .container-fluid, .container{margin: 10px auto;}
         .test:nth-child(odd){clear: both;}
+        .carousel-item img { margin: auto;}
     </style>
     <title>True's Portfolio</title> <!-- maybe name it gamedev journey idk -->
     </head>
@@ -38,29 +39,91 @@
             </div>
 
         <div class="container"> <!-- words I want to be animated in -->
+            <br>
+            <br>
+            <br>
+            <br>
             <h1 class="display-1 text-white text-center animated fadeInDown"><strong>Hi.</strong></h1>
             <h1 class="display-4 text-white text-center animated fadeInRight slow delay-1s"><strong>I'm Daniel Otaigbe.</strong></h1>
             <h1 class="display-4 text-white text-center animated fadeInLeft slow delay-3s"><strong>I'm here to take names...</strong></h1>
             <h1 class="display-1 text-white text-center animated fadeInUp slower delay-5s"><strong><em>and make games.</em></strong></h1>
     </div>
-    <p class="text-white">
-        On this website you can see all the projects that I've worked on.
+    <h1 class="display-4 text-white text-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        Here you can see all the projects that I've worked on.
+        <br>
+        <br> 
         <!-- ramble on about resume and stuff -->
-    </p>
-        <div class="carousel" id="games" data-ride="carousel"> <!-- links to games -->
-
-            <div class="carousel-inner"> <!--bootstrap class used for making rows -->
-                <div class="item">
-                    <a href = "Chronograph.html"><img src="Assets/logo.png" alt="Project Chronograph" width="500" height="333"></a>
-                </div>
-                
-                <div class="item">
-                    <a href = "HomingIn.html"><img src="Assets/HomingIn.png" alt="Homing In!" width="500" height="333"></a>
-                </div>
-                
-            </div>
-
+    </h1>
+        <!--Carousel Wrapper-->
+<div id="gamesCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#gamesCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#gamesCarousel" data-slide-to="1"></li>
+    <li data-target="#gamesCarousel" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <a href="Chronograph.html">
+        <div class="view">
+            <img class="center-block w-100" src="Assets/logo.png"
+              alt="Project Chronograph">
+            <div class="mask rgba-black-light"></div>
         </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive">Project Chronograph</h3>
+            <p>My very first game development project. I was lead programmer on a team of 4-6 (people would join and leave throughout the year)</p>
+          </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+    <a href="HomingIn.html">
+      <div class="view">
+        <img class="center-block w-100" src="Assets/HomingIn.png"
+          alt="Homing In!">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Homing In!</h3>
+        <p>My first game jam game. I worked with one other artist on this game, and the theme for the jam was home, hence the clever name.</p>
+      </div>
+    </a>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+    <a href="Starchild.html">
+      <div class="view">
+        <img class="d-block w-75" src="Assets/STARCHILD.jpg"
+          alt="Starchild">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">StarChild</h3>
+        <p>My second game jam game. I worked on this game as lead game designer and a general programmer on a team of 5 people. The theme of the jam was only one, which is why you only have one way to attack and defend.</p>
+      </div>
+    </a>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#gamesCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#gamesCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
     </div>
 
 
@@ -72,7 +135,7 @@
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>    
+  <script type="text/javascript" src="js/mdb.min.js"></script> 
   </body>
 
 </html>
