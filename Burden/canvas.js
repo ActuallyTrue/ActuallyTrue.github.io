@@ -33,6 +33,7 @@ var fade = 0;
 
 let music = new Audio('assets/GameOver.mp3');
 music.autoplay = true;
+music.loop = true;
 music.play();
 
 document.addEventListener("keydown", keyDownHandler, false);
