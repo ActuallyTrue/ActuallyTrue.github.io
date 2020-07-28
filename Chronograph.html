@@ -1,64 +1,110 @@
-<!-- I got help from the GT Web Dev club, the internet, and the linkedin learning course on this project--->
-<!-- to do: put unity games on other webpages-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta font="Helvetica Neue">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content = "Game Development, Gaming, gamedev, actuallytrue">
-    <meta name="description" content="Portfolio Website for ActuallyTrue (Daniel Otaigbe)">
-    <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">  <!-- this linking will let you just link this at the top and you'll have bootstrap on any document -->   
-    <style>
-        body { background: #23272a !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-        .container-fluid, .container{margin: 10px auto;}
-        .carousel-item img { margin: auto;}
-    </style>
-    <title>True's Portfolio</title> <!-- maybe name it gamedev journey idk -->
-    <script src="StarChildGame/Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "StarChildGame/Build/StarChildGame.json");
-    </script>
-    </head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Daniel Otaigbe - Project Chronograph</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Shuffle - v2.2.0
+  * Template URL: https://bootstrapmade.com/bootstrap-3-one-page-template-free-shuffle/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
 <body>
-    <!--Add the games to the navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark indigo">
-  <a class="navbar-brand" href="index.html">Daniel Otaigbe's Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="Assets/Daniel_Otaigbe_Resume.pdf" target="_blank">Resume</a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" href="https://github.com/ActuallyTrue" target="_blank">GitHub</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/daniel-otaigbe-50355b185/" target="_blank">LinkedIn</a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div style="max-width: 1280px; margin: 0 auto; padding: 10px; border-width: 0;"> <!-- max width just doesn't let anything go beyond, margin keeps it central -->
 
-        <div class="container"> <!-- words I want to be animated in -->
-            <h1 class="display-1 text-white text-center animated fadeInDown"><strong><br><a href="Chronograph2019.zip">Here you can download Project Chronograph (Windows Only)</a></strong></h1>
-            <p class="text-white text-center animated fadeInUp slow delay-1s"><strong><br>Project Chronograph was my first foray into game development. I was the lead programmer on the team. The game originally started as a metroidvania, but it didn't work out so it became a puzzle platformer. We had some troubles with art at the end which is why there are floating blocks as the cores the player has to possess.</strong>
-            </p>
-            <dl class="text-white text-center animated fadeInUp slow delay-1s">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Daniel Otaigbe's Portfolio</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <!--<li><a href="#portfolio">Portfolio</a></li>-->
+          <li><a href="https://github.com/ActuallyTrue">Github</a></li>
+          <li class="drop-down"><a href="index.html#portfolio">Games</a>
+            <ul>
+              <li><a href="Starchild.html">StarChild</a></li>
+              <!--<li class="drop-down"><a href="">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+              <li><a href="Chronograph.html#">Project Chronograph</a></li>
+              <li><a href="HomingIn.html">Homing In</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Project Chronograph</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Games</a></li>
+            <li>Project Chronograph</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container">
+        <img src="assets/logo.png" class="img-fluid" alt="">
+        <div class="portfolio-description">
+            <a href="Chronograph2019.zip"><h2>Click here to download Project Chronograph.</h2></a>
+          <p>
+            Project Chronograph was my first foray into game development. I was the lead programmer on the team. The game originally started as a metroidvania, but it didn't work out so it became a puzzle platformer. We had some troubles with art at the end which is why there are floating blocks as the cores the player has to possess.
+          </p>
+            <dl class="text-center animated fadeInUp slow delay-1s">
                 <dt>Keyboard:</dt>
             <dd>WASD or arrow keys to move, Spacebar to jump, K to dash, O to speed up when possessing, i to slow down when possessing</dd>
                 <dt>PS4 Controller:</dt>
@@ -67,17 +113,92 @@
                 <dd>The objective is to get to the end of the level. To do this, you can dash into the cores (gray blocks) to possess them. When you jump out of them, you'll recieve any momentum the core has plus your jump. Try to speed up and slow down the cores to get the perfect jumps needed to clear the level!</dd>
                 
             </dl>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= --> 
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+
+          <div class="d-flex footer-info justify-content-center align-items-stretch">
+            <div class="social-links justify-content-center">
+              <a href="https://twitter.com/the_true_dev" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.instagram.com/daniel.otaigbe" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/daniel-otaigbe-50355b185" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div><!--
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>-->
+
+        </div>
+      </div>
     </div>
-  </div>
-    
-<!-- bootstrap JS stuff --->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script> 
-  </body>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Shuffle</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootstrap-3-one-page-template-free-shuffle/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
