@@ -169,7 +169,10 @@
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
+      layoutMode: 'vertical',
+      vertical: {
+      horizontalAlignment: 0.5,
+    }
     });
 
     $('#portfolio-flters li').on('click', function() {
